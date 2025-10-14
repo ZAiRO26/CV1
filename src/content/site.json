@@ -1,0 +1,103 @@
+{
+  "name": "Ravi Saxena",
+  "tagline": "AI Product Manager | Creative Technologist | Innovator in Generative and Agentic AI",
+  "subheading": "From managing global IT incidents to building AI-driven workflows and creative products for the future.",
+  "homeIntro": "Hi, I'm Ravi Saxena — a product thinker, technologist, and creative builder driven by curiosity. From managing global IT incidents to crafting AI-powered workflows and digital experiences, I've spent the last decade turning complexity into clarity. I now focus on building AI-driven products, helping companies reimagine what's possible when human creativity meets machine intelligence.",
+  "about": {
+    "title": "From Incident Management to AI Product Innovation",
+    "summary": "12+ years experience in IT Operations, Incident Management, and Client Success. Transitioning into AI Product Management with hands-on experience in generative and agentic AI tools like n8n, ComfyUI, Cursor, LangChain. Passionate about blending technology, creativity, and human-centric AI systems.",
+    "storyMd": "My operational leadership equipped me with **systems thinking and stakeholder management** skills that translate perfectly to product management. My fascination with **AI-driven automation and agentic systems** drives my current focus on building intelligent products.\n\nI combine technical execution with creative strategy, designing solutions that are both intelligent and intuitive. Currently focused on **agentic AI systems** — building products that think, react, and collaborate like humans.\n\n**Personal interests** include photography, AI-assisted faceless videos, and embedded system tinkering that fuel my creativity and technical problem-solving approach."
+  },
+  "experience": [
+    {
+      "company": "Qioseon Labs LLP",
+      "role": "Product Manager & Client Account Manager",
+      "years": "2023–Present",
+      "detailsMd": "- Led client engagements, created RFx documents, collaborated cross-functionally on web app development and AI-enhanced solutions.\n- Provided technical advisory and ensured seamless product delivery.\n- Developed AI-driven content generation and lead tracking automation for several small business clients.\n- Highlight role from ideation to deployment and ongoing optimization.",
+      "skills": ["Product Management", "Client Relations", "AI Solutions", "Technical Advisory"]
+    },
+    {
+      "company": "Concentrix",
+      "role": "Incident Manager, Duty Manager",
+      "years": "2020–2023",
+      "detailsMd": "- Managed global IT service delivery for Microsoft Intune, ensuring SLA adherence, multi-team coordination, and data-driven escalations.\n- Improved troubleshooting processes and reduced downtime.\n- Led critical IT operations and incident resolution for enterprise clients across multiple geographies.\n- Built processes to reduce downtime and improve SLAs through structured problem-solving.\n- Mentored technical teams and streamlined communication between engineering and clients.",
+      "skills": ["Incident Management", "Global Operations", "SLA Management", "Team Leadership", "Process Improvement"]
+    },
+    {
+      "company": "Earlier Roles (Convergys & Others)",
+      "role": "Technical Lead & Escalation Engineer",
+      "years": "2013–2020",
+      "detailsMd": "- Technical lead and escalation engineer roles supporting Microsoft products and managing complex technical support issues.\n- Managed large-scale client environments and service quality across global infrastructure.\n- Developed expertise in process improvement, data-driven operations, and customer experience.\n- Transferable skills: operational leadership, stakeholder communication, and process improvement.",
+      "skills": ["Technical Leadership", "Escalation Management", "Microsoft Products", "Customer Experience", "Operations"]
+    }
+  ],
+  "projectsTitle": "Portfolio Projects - AI Innovation in Action",
+  "projects": [
+    {
+      "title": "AI Sports Director",
+      "description": "Automated multi-camera live streaming system with AI agent directing camera angles via gaze, sound, and motion detection. Generates real-time highlights and post-match summary videos.",
+      "tools": ["Computer Vision", "AI Orchestration", "Cloud Integration", "Real-time Processing"],
+      "link": "#"
+    },
+    {
+      "title": "LinkedIn Agent Automation",
+      "description": "AI-powered outreach and content scheduling agent for LinkedIn using LangChain, GPT, and n8n. Automates lead generation and personalized engagement.",
+      "tools": ["AI Agent Design", "API Integration", "Workflow Automation", "LangChain"],
+      "link": "#"
+    },
+    {
+      "title": "Dual Bluetooth Audio App",
+      "description": "Bluetooth speaker app with AI-driven volume optimization, speaker detection, and syncing. Demonstrates embedded systems integration and AI predictive analytics.",
+      "tools": ["Embedded Systems", "Android Development", "AI Analytics", "Product Architecture"],
+      "link": "#"
+    },
+    {
+      "title": "AI Director for Influencers",
+      "description": "AI system switching cameras dynamically during live streams based on audio-visual cues. Developing for 3-5 camera setup with real-time decision analytics.",
+      "tools": ["Agentic AI", "Computer Vision", "Real-time Analytics", "UX Design"],
+      "link": "#"
+    },
+    {
+      "title": "Client Websites & AI Workflows",
+      "description": "Developed AI-driven content generation and lead tracking automation for several small business clients. Role from ideation to deployment and ongoing optimization.",
+      "tools": ["React", "AI Integration", "Workflow Design", "Client Management"],
+      "link": "#"
+    },
+    {
+      "title": "Creative AI Content",
+      "description": "Faceless AI YouTube videos with AI-assisted video content and automation workflows. Photography portfolio with AI-enhanced editing and conceptual work.",
+      "tools": ["AI Content Creation", "Video Automation", "Creative Direction", "Post-Production"],
+      "link": "#"
+    }
+  ],
+  "gallery": {
+    "title": "Framing Stories Through Light and Emotion",
+    "subtitle": "Photography has always been my way to pause, observe, and translate emotion into visuals. I specialize in conceptual, landscape, and minimal portrait photography, often blending AI-assisted post-production.",
+    "caption": "Technology captures data. I capture stories.",
+    "images": ["/vite.svg"],
+    "videos": [
+      { "title": "Faceless AI Reel", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+    ]
+  },
+  "skills": [
+    { "category": "Product & Management Skills", "items": ["MVP Defining", "Agile Processes", "Roadmapping", "OKRs", "Stakeholder Communication", "Systems Design"] },
+    { "category": "AI Tools & Frameworks", "items": ["ChatGPT", "Cursor", "LangChain", "n8n", "ComfyUI", "GPT", "Agentic AI Design", "Generative AI Tools"] },
+    { "category": "Technical Skills", "items": ["React", "JavaScript", "Figma", "GitHub", "Cloud Integration", "Embedded Systems", "API Integration", "AWS", "GCP"] },
+    { "category": "Creative Skills", "items": ["Photography", "Adobe Lightroom", "Premiere Pro", "After Effects", "AI Content Workflows", "Video Editing"] },
+    { "category": "Video & Content Creation", "items": ["CapCut", "Runway", "Pika", "Kaiber", "AI-assisted Content", "Faceless Video Production"] }
+  ],
+  "certifications": ["ITIL v4 Certified", "CCNA (Routing & Switching)"],
+  "contact": {
+    "heading": "Let's Build Something Intelligent Together.",
+    "blurb": "I'm open to collaborating on AI Product roles, creative technology projects, or advisory work for SaaS and automation startups. Inviting interested recruiters and collaborators to connect or schedule a call.",
+    "quote": "From managing global IT incidents to building AI-driven workflows and creative products for the future.",
+    "email": "ravi.saxena@example.com",
+    "placeholders": { "name": "Name", "email": "Email", "message": "What AI product challenge can we solve together?" }
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/ravisaxena",
+    "github": "https://github.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "resumeUrl": "/resume.pdf"
+}
