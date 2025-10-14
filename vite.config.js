@@ -5,23 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Enhanced production optimizations
-    minify: 'terser',
+    // Simplified production optimizations
+    minify: true,
     sourcemap: false,
     target: 'esnext',
     // Optimize chunk size warnings
     chunkSizeWarningLimit: 1000,
-    // Code splitting optimization
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          router: ['react-router-dom'],
-          animations: ['framer-motion'],
-          icons: ['lucide-react']
-        }
-      }
-    },
     // Enable compression
     cssCodeSplit: true,
     assetsInlineLimit: 4096
