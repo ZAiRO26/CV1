@@ -1,4 +1,4 @@
-import { Github, Linkedin, Youtube } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 export default function Acta({ socials, resumeUrl }) {
   return (
@@ -13,32 +13,8 @@ export default function Acta({ socials, resumeUrl }) {
         >
           <Linkedin className="h-5 w-5" />
         </a>
-        <a 
-          href={socials?.github} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="p-3 rounded-lg border border-black/20 hover:bg-black/5 transition-colors"
-        >
-          <Github className="h-5 w-5" />
-        </a>
-        <a 
-          href={socials?.youtube} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="p-3 rounded-lg border border-black/20 hover:bg-black/5 transition-colors"
-        >
-          <Youtube className="h-5 w-5" />
-        </a>
       </div>
-      <div className="text-center">
-        <a 
-          href={resumeUrl || "/resume.pdf"} 
-          download 
-          className="inline-block mt-6 text-sm underline text-black/70 hover:text-black transition-colors"
-        >
-          Download CV (PDF)
-        </a>
-      </div>
+
     </div>
   );
 }

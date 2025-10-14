@@ -6,7 +6,38 @@
   "about": {
     "title": "From Incident Management to AI Product Innovation",
     "summary": "12+ years experience in IT Operations, Incident Management, and Client Success. Transitioning into AI Product Management with hands-on experience in generative and agentic AI tools like n8n, ComfyUI, Cursor, LangChain. Passionate about blending technology, creativity, and human-centric AI systems.",
-    "storyMd": "My operational leadership equipped me with **systems thinking and stakeholder management** skills that translate perfectly to product management. My fascination with **AI-driven automation and agentic systems** drives my current focus on building intelligent products.\n\nI combine technical execution with creative strategy, designing solutions that are both intelligent and intuitive. Currently focused on **agentic AI systems** — building products that think, react, and collaborate like humans.\n\n**Personal interests** include photography, AI-assisted faceless videos, and embedded system tinkering that fuel my creativity and technical problem-solving approach."
+    "storyMd": "My operational leadership equipped me with **systems thinking and stakeholder management** skills that translate perfectly to product management. My fascination with **AI-driven automation and agentic systems** drives my current focus on building intelligent products.\n\nI combine technical execution with creative strategy, designing solutions that are both intelligent and intuitive. Currently focused on **agentic AI systems** — building products that think, react, and collaborate like humans.\n\n**Personal interests** include photography, AI-assisted faceless videos, and embedded system tinkering that fuel my creativity and technical problem-solving approach.",
+    "personalStory": [
+      "Born and raised in Gurgaon.",
+      "I love to talk, laugh, and meet new people.",
+      "Coffee fan. Breakfast, lunch, and dinner.",
+      "Probably. Good vibes.",
+      "I'm a big fan of the 90s.",
+      "But I'm loyal to my era.",
+      "But more of my life is ahead."
+    ],
+    "workTraits": [
+      {
+        "trait": "Life-long learner",
+        "description": "I don't know it all, but I'm happy to learn and grow in my career and as a human being!"
+      },
+      {
+        "trait": "Problem solver",
+        "description": "As a critical thinker, when problems arise, I always try to figure out the best course of action!"
+      },
+      {
+        "trait": "Positive Patty",
+        "description": "I personally think this is a key part of being a good team player and a leader."
+      },
+      {
+        "trait": "Goal-driven attitude",
+        "description": "I'm always thinking of how we can move projects forward and what's next."
+      },
+      {
+        "trait": "Accountable",
+        "description": "I take full ownership of my work and see it through to the finish line."
+      }
+    ]
   },
   "experience": [
     {
@@ -90,14 +121,13 @@
   "contact": {
     "heading": "Let's Build Something Intelligent Together.",
     "blurb": "I'm open to collaborating on AI Product roles, creative technology projects, or advisory work for SaaS and automation startups. Inviting interested recruiters and collaborators to connect or schedule a call.",
-    "quote": "From managing global IT incidents to building AI-driven workflows and creative products for the future.",
-    "email": "ravi.saxena@example.com",
+    "email": "sudoku9nine@gmail.com",
     "placeholders": { "name": "Name", "email": "Email", "message": "What AI product challenge can we solve together?" }
   },
   "socials": {
-    "linkedin": "https://www.linkedin.com/in/ravisaxena",
+    "linkedin": "https://www.linkedin.com/in/ravi-saxena-95090326/",
     "github": "https://github.com/",
     "youtube": "https://www.youtube.com/"
   },
-  "resumeUrl": "/resume.pdf"
+  "resumeUrl": "/Ravi Saxena_CV_2025.docx"
 }

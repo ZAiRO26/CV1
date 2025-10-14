@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" style="background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #ec4899 100%);">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="nodeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="pinkNodeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background particles -->
+  <g opacity="0.6">
+    <circle cx="200" cy="150" r="2" fill="#60a5fa" opacity="0.8"/>
+    <circle cx="350" cy="200" r="1.5" fill="#f472b6" opacity="0.6"/>
+    <circle cx="500" cy="100" r="2.5" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="650" cy="180" r="1" fill="#60a5fa" opacity="0.5"/>
+    <circle cx="800" cy="120" r="2" fill="#f472b6" opacity="0.8"/>
+    <circle cx="950" cy="220" r="1.5" fill="#60a5fa" opacity="0.6"/>
+    <circle cx="1100" cy="80" r="2.5" fill="#a78bfa" opacity="0.7"/>
+    <circle cx="1250" cy="160" r="1" fill="#f472b6" opacity="0.5"/>
+    <circle cx="1400" cy="200" r="2" fill="#60a5fa" opacity="0.8"/>
+    <circle cx="1550" cy="140" r="1.5" fill="#a78bfa" opacity="0.6"/>
+    <circle cx="1700" cy="180" r="2.5" fill="#f472b6" opacity="0.7"/>
+  </g>
+  
+  <!-- Network nodes -->
+  <g filter="url(#glow)">
+    <!-- Main central network -->
+    <circle cx="960" cy="400" r="8" fill="url(#nodeGradient)" opacity="0.9"/>
+    <circle cx="800" cy="350" r="6" fill="url(#pinkNodeGradient)" opacity="0.8"/>
+    <circle cx="1120" cy="380" r="7" fill="url(#nodeGradient)" opacity="0.85"/>
+    <circle cx="900" cy="480" r="5" fill="url(#pinkNodeGradient)" opacity="0.7"/>
+    <circle cx="1020" cy="320" r="6" fill="url(#nodeGradient)" opacity="0.8"/>
+    
+    <!-- Secondary network cluster -->
+    <circle cx="600" cy="600" r="6" fill="url(#nodeGradient)" opacity="0.8"/>
+    <circle cx="550" cy="650" r="4" fill="url(#pinkNodeGradient)" opacity="0.7"/>
+    <circle cx="650" cy="680" r="5" fill="url(#nodeGradient)" opacity="0.75"/>
+    <circle cx="580" cy="720" r="4" fill="url(#pinkNodeGradient)" opacity="0.6"/>
+    
+    <!-- Third network cluster -->
+    <circle cx="1400" cy="600" r="7" fill="url(#pinkNodeGradient)" opacity="0.85"/>
+    <circle cx="1350" cy="550" r="5" fill="url(#nodeGradient)" opacity="0.7"/>
+    <circle cx="1450" cy="650" r="6" fill="url(#pinkNodeGradient)" opacity="0.8"/>
+    <circle cx="1380" cy="680" r="4" fill="url(#nodeGradient)" opacity="0.6"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <g stroke-width="1" opacity="0.4">
+    <!-- Main network connections -->
+    <line x1="960" y1="400" x2="800" y2="350" stroke="#60a5fa" stroke-width="1.5"/>
+    <line x1="960" y1="400" x2="1120" y2="380" stroke="#f472b6" stroke-width="1.2"/>
+    <line x1="960" y1="400" x2="900" y2="480" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="960" y1="400" x2="1020" y2="320" stroke="#60a5fa" stroke-width="1.3"/>
+    <line x1="800" y1="350" x2="1020" y2="320" stroke="#f472b6" stroke-width="0.8"/>
+    <line x1="1120" y1="380" x2="900" y2="480" stroke="#60a5fa" stroke-width="0.9"/>
+    
+    <!-- Secondary network connections -->
+    <line x1="600" y1="600" x2="550" y2="650" stroke="#f472b6" stroke-width="1"/>
+    <line x1="600" y1="600" x2="650" y2="680" stroke="#60a5fa" stroke-width="1.2"/>
+    <line x1="550" y1="650" x2="580" y2="720" stroke="#a78bfa" stroke-width="0.8"/>
+    <line x1="650" y1="680" x2="580" y2="720" stroke="#f472b6" stroke-width="0.9"/>
+    
+    <!-- Third network connections -->
+    <line x1="1400" y1="600" x2="1350" y2="550" stroke="#60a5fa" stroke-width="1.1"/>
+    <line x1="1400" y1="600" x2="1450" y2="650" stroke="#f472b6" stroke-width="1.3"/>
+    <line x1="1350" y1="550" x2="1380" y2="680" stroke="#a78bfa" stroke-width="0.7"/>
+    <line x1="1450" y1="650" x2="1380" y2="680" stroke="#60a5fa" stroke-width="0.8"/>
+    
+    <!-- Inter-cluster connections -->
+    <line x1="800" y1="350" x2="600" y2="600" stroke="#f472b6" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1120" y1="380" x2="1350" y2="550" stroke="#60a5fa" stroke-width="0.6" opacity="0.3"/>
+    <line x1="900" y1="480" x2="650" y2="680" stroke="#a78bfa" stroke-width="0.4" opacity="0.2"/>
+  </g>
+  
+  <!-- Floating particles with animation effect -->
+  <g opacity="0.3">
+    <circle cx="300" cy="300" r="1" fill="#60a5fa">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1600" cy="400" r="1.5" fill="#f472b6">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="800" r="1" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1500" cy="200" r="1.2" fill="#60a5fa">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
