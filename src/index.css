@@ -100,3 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
   overflow-x: hidden;
 }
+
+/* Smooth scrolling optimizations for parallax */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Performance optimizations for parallax */
+* {
+  will-change: auto;
+}
+
+/* Optimize parallax layers for better performance */
+.parallax-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

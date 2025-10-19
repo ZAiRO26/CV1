@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Home from './pages/Home';
 
 // Lazy load page components for better performance
@@ -21,11 +22,13 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Navbar />
-      <AnimatedRoutes />
-      <WhatsAppButton />
-    </BrowserRouter>
+    <ParallaxProvider>
+      <BrowserRouter>
+        <Navbar />
+        <AnimatedRoutes />
+        <WhatsAppButton />
+      </BrowserRouter>
+    </ParallaxProvider>
   );
 }
 

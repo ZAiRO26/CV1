@@ -9,7 +9,7 @@ export default function Navbar() {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/experience', label: 'Experience' },
-    { to: '/projects', label: 'WORK' },
+    { to: '/projects', label: 'Work' },
     { to: '/skills', label: 'Skills' },
     { to: '/contact', label: 'Contact' }
   ];
