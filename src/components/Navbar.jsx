@@ -19,9 +19,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 shadow-sm">
-      <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between h-24 py-2">
+      <div className="container mx-auto px-8 max-w-7xl flex items-center justify-between h-28 py-2">
         {/* Left side navigation - Desktop */}
-        <div className="hidden md:flex gap-12 text-base font-medium tracking-wide items-center justify-center flex-1">
+        <div className="hidden md:flex gap-16 text-base font-medium tracking-wide items-center justify-start flex-1">
           {items.slice(0, 3).map((item) => (
             <NavLink
               key={item.to}
@@ -51,13 +51,13 @@ export default function Navbar() {
         {/* Center name - clickable to home with enhanced styling */}
         <NavLink 
           to="/" 
-          className="font-bold text-3xl tracking-wider cursor-pointer transition-all duration-300 hover:scale-105 bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent"
+          className="font-bold text-3xl md:text-4xl tracking-wider cursor-pointer transition-all duration-300 hover:scale-105 bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent mx-8"
         >
           RAVI SAXENA
         </NavLink>
         
         {/* Right side navigation - Desktop */}
-        <div className="hidden md:flex gap-12 text-base font-medium tracking-wide items-center justify-center flex-1">
+        <div className="hidden md:flex gap-16 text-base font-medium tracking-wide items-center justify-end flex-1">
           {items.slice(3).map((item) => (
             <NavLink
               key={item.to}
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       {isOpen && (
-        <div className="md:hidden absolute inset-x-0 top-24 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg z-50">
+        <div className="md:hidden absolute inset-x-0 top-28 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg z-50">
           <div className="container mx-auto px-6 py-8">
             <div className="grid gap-2">
               {items.map((item) => (

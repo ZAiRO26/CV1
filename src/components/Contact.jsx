@@ -1,13 +1,40 @@
 import Section from './Section';
 import { useForm } from 'react-hook-form';
 import { Github, Linkedin, Youtube } from 'lucide-react';
+import { useState } from 'react';
 
-export default function Contact({ socials, content }) {
+export default function Contact({ content }) {
   const { register, handleSubmit, reset } = useForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
-  const onSubmit = (data) => {
-    alert(`Thanks, ${data.name}! I will reach out to ${data.email}.`);
-    reset();
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('http://localhost:3001/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus({ type: 'success', message: `Thanks, ${data.name}! Your message has been sent successfully. I'll get back to you soon!` });
+        reset();
+      } else {
+        setSubmitStatus({ type: 'error', message: result.message || 'Failed to send message. Please try again.' });
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -42,26 +69,45 @@ export default function Contact({ socials, content }) {
             />
           </div>
           
-          <select className="w-full px-4 py-3 rounded-lg border border-black/20 bg-white text-base focus:outline-none focus:border-accent">
-            <option>Select Reason</option>
-            <option>Project Collaboration</option>
-            <option>Job Opportunity</option>
-            <option>General Inquiry</option>
-            <option>Other</option>
+          <select 
+            {...register('reason')}
+            className="w-full px-4 py-3 rounded-lg border border-black/20 bg-white text-base focus:outline-none focus:border-accent"
+          >
+            <option value="">Select Reason</option>
+            <option value="Project Collaboration">Project Collaboration</option>
+            <option value="Job Opportunity">Job Opportunity</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Other">Other</option>
           </select>
           
           <textarea 
             {...register('message', { required: true })} 
-            placeholder={content?.placeholders?.message || 'What do you want to create together?'} 
+            placeholder={content?.placeholders?.message || 'What AI product challenge can we solve together?'} 
             rows={6} 
             className="w-full px-4 py-3 rounded-lg border border-black/20 bg-white text-base focus:outline-none focus:border-accent resize-none" 
           />
+
+          {/* Status Message */}
+          {submitStatus && (
+            <div className={`p-4 rounded-lg text-sm ${
+              submitStatus.type === 'success' 
+                ? 'bg-green-50 text-green-800 border border-green-200' 
+                : 'bg-red-50 text-red-800 border border-red-200'
+            }`}>
+              {submitStatus.message}
+            </div>
+          )}
           
           <button 
             type="submit" 
-            className="w-full md:w-auto px-8 py-3 rounded-lg bg-black text-white font-medium hover:bg-black/90 transition-colors"
+            disabled={isSubmitting}
+            className={`w-full md:w-auto px-8 py-3 rounded-lg font-medium transition-colors ${
+              isSubmitting 
+                ? 'bg-gray-400 text-white cursor-not-allowed' 
+                : 'bg-black text-white hover:bg-black/90'
+            }`}
           >
-            SEND
+            {isSubmitting ? 'SENDING...' : 'SEND'}
           </button>
         </form>
       </div>

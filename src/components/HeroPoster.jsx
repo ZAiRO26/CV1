@@ -32,7 +32,7 @@ export default function HeroPoster({ data }) {
             {data.subheading}
           </p>
           <div className="mt-6 flex items-center justify-center gap-3">
-            <a href="/Ravi Saxena_CV_2025.docx" download className="px-4 py-2 rounded-md bg-white text-black border border-black/20 hover:bg-gray-50 transition-colors">
+            <a href="/Ravi Saxena_CV.docx" download className="px-4 py-2 rounded-md bg-white text-black border border-black/20 hover:bg-gray-50 transition-colors">
               Download My CV
             </a>
             <a href="#contact" className="px-4 py-2 rounded-md border border-black/20 hover:bg-black/5 transition-colors">

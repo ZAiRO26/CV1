@@ -1,6 +1,6 @@
 import { Linkedin } from 'lucide-react';
 
-export default function Acta({ socials, resumeUrl }) {
+export default function Acta({ socials }) {
   return (
     <div className="mt-12 pt-8 border-t border-black/10">
       <p className="text-sm text-black/60 mb-4 text-center">Find me on</p>

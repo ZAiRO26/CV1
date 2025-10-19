@@ -24,7 +24,7 @@ export default function Hero({ data }) {
         <p className="mt-4 text-gray-200 max-w-2xl mx-auto">{data.subheading}</p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <motion.a 
-            href="/Ravi Saxena_CV_2025.docx"
+            href="/Ravi Saxena_CV.docx"
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
